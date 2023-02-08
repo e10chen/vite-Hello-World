@@ -1,5 +1,5 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
+  
   <HelloWorld msg="Hello Vue 3 + Vite" />
 </template>
 
@@ -11,12 +11,67 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+ .buttons{
+   padding: 5px;
 }
+
+.buttons:hover{
+  background-color: yellow;
+}
+
+.buttons:focus {
+  background-color: yellow; 
+}
+
+.all{
+  border-style: solid;
+  border-width: 5px;
+  width: 400px;
+  max-width: 500px;
+  margin: auto;
+  background-color: coral;
+  margin-top: 10px;
+}
+
+.title{
+  text-align: center;
+  font-size: 40px;
+}
+
+.name{
+  text-align: center;
+}
+.content{
+   text-align: center;
+}
+img {
+  width: 300px;
+}
+
+p {
+  text-align: left; 
+  text-indent: 5%;
+  font-size: 18px;
+  padding: 15px;
+  color: blue;
+}
+
+.detailButton {
+  margin: 12px;
+  position: center; 
+}
+
+  @media (min-width: 500px) and (max-width: 800px) {
+    
+    .detailButton {
+      display: none;
+    }
+  }
+
+@media (max-width: 500px) {
+  .all{
+    transform: scale(0.8);
+  }
+}
+
 </style>
