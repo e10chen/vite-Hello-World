@@ -11,67 +11,30 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <style>
- .buttons{
-   padding: 5px;
-}
+<div class="buttons">
+  <button class="copy" >Copy</button>
 
-.buttons:hover{
-  background-color: yellow;
-}
+  <button class="toggleBackGroundColor" >Change Background Color</button>
 
-.buttons:focus {
-  background-color: yellow; 
-}
+  <button class="changeTitle">Change Title</button>
 
-.all{
-  border-style: solid;
-  border-width: 5px;
-  width: 400px;
-  max-width: 500px;
-  margin: auto;
-  background-color: coral;
-  margin-top: 10px;
-}
+  <button class="deleteButton">Delete Last Instance</button>
 
-.title{
-  text-align: center;
-  font-size: 40px;
-}
+</div>
 
-.name{
-  text-align: center;
-}
-.content{
-   text-align: center;
-}
-img {
-  width: 300px;
-}
-
-p {
-  text-align: left; 
-  text-indent: 5%;
-  font-size: 18px;
-  padding: 15px;
-  color: blue;
-}
-
-.detailButton {
-  margin: 12px;
-  position: center; 
-}
-
-  @media (min-width: 500px) and (max-width: 800px) {
+<div class="all">
+  <h1 class="title">
+    Ethan Chen
+  </h1>
+  
+  <img class ="picture" src = "https://media.ed.edmunds-media.com/toyota/tacoma/2020/oem/2020_toyota_tacoma_crew-cab-pickup_trd-off-road_fq_oem_1_1600.jpg" width=200px>
     
-    .detailButton {
-      display: none;
-    }
-  }
+  <p class ="text">
+The image above is a Tacoma pickup truck made by the Japanese automaker Toyota. Toyota has been making the Tacoma pickup truck since 1995. The Tacoma has two engines options: 2.7-liter 4-Cylinder and the 3.5-liter V6. It has a miles per gallon of 20 in the city and 23 on the highway.
+  </p>
+    <button class="detailButton">      
+      Detail
+  </button>
 
-@media (max-width: 500px) {
-  .all{
-    transform: scale(0.8);
-  }
-}
-
+</div>
 </style>
