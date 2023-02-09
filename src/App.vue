@@ -64,6 +64,7 @@ buttons:focus{
     .detailButton {
       display: none;
     }
+  }
 
 @media (max-width: 500px) {
   .all{
